@@ -101,7 +101,7 @@ def GoTo(Url,Index):
 	try:
 		for i in range(len(comicElem)):
 			try:
-				summary = comicElem[i].select('li[class^=coupon-list-item]')
+				summary = comicElem[i].select('li[class^=coupon-listitem]')
 				logging.info("I AM IN GOTO COUPON_LIST_ITEM						"+ str(len(summary)))
 
 				for item in range(len(summary)):
